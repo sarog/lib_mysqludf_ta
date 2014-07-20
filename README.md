@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/joaocosta/lib_mysqludf_ta.png?branch=master)](https://travis-ci.org/joaocosta/lib_mysqludf_ta)
 
-# Description:
+# Description
 
 Implements technical analysis functions as MySQL UDFs.
 
@@ -22,14 +22,14 @@ Other indicators which can be derived from those functions include:
 
 
 
-# Availability:
+# Availability
 
 Source repository at:
 http://github.com/joaocosta/lib_mysqludf_ta
 
 
 
-# Compiling:
+# Compiling
 
 ## Windows:
 
@@ -59,11 +59,11 @@ For more information on compiling MySQL UDFs:
     http://dev.mysql.com/doc/refman/5.1/en/adding-udf.html
 
 
-#Install the UDFs
+# Install the UDFs
 
 From the MySQL prompt:
 
-## Windows
+## Windows:
 
     CREATE FUNCTION ta_ema RETURNS REAL SONAME 'lib_mysqludf_ta.dll';
     CREATE FUNCTION ta_max RETURNS REAL SONAME 'lib_mysqludf_ta.dll';
@@ -75,7 +75,7 @@ From the MySQL prompt:
     CREATE FUNCTION ta_sum RETURNS REAL SONAME 'lib_mysqludf_ta.dll';
     CREATE FUNCTION ta_tr RETURNS REAL SONAME 'lib_mysqludf_ta.dll';
 
-## Linux
+## Linux:
 
     CREATE FUNCTION ta_ema RETURNS REAL SONAME 'lib_mysqludf_ta.so';
     CREATE FUNCTION ta_max RETURNS REAL SONAME 'lib_mysqludf_ta.so';
@@ -87,12 +87,12 @@ From the MySQL prompt:
     CREATE FUNCTION ta_stddevp RETURNS REAL SONAME 'lib_mysqludf_ta.so';
     CREATE FUNCTION ta_tr RETURNS REAL SONAME 'lib_mysqludf_ta.so';
 
-# Test your installation
+# Test your installation:
 
     make check  #This assumes a local mysql instance is available, username root with no password
 
 
-# Functions:
+# Functions
 To try the examples below import the provided sampledb.sql into a MySQL database.
 
     mysqladmin -u root create lib_ta
