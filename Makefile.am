@@ -1,6 +1,7 @@
 TESTS=test/02_load_data.sh test/03_test.sh
 ACLOCAL_AMFLAGS=-I config
 lib_LTLIBRARIES = lib_mysqludf_ta.la
+AUTOMAKE_OPTIONS = subdir-objects
 lib_mysqludf_ta_la_SOURCES = src/ta_libmysqludf_ta.h \
                 src/ta_ema.c \
 				src/ta_max.c \
