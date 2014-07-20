@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/joaocosta/lib_mysqludf_ta.png?branch=master)](https://travis-ci.org/joaocosta/lib_mysqludf_ta)
 
-# DESCRIPTION:
+# Description:
 
 Implements technical analysis functions as MySQL UDFs.
 
@@ -22,14 +22,14 @@ Other indicators which can be derived from those functions include:
 
 
 
-# AVAILABILITY:
+# Availability:
 
 Source repository at:
 http://github.com/joaocosta/lib_mysqludf_ta
 
 
 
-# COMPILING:
+# Compiling:
 
 ## Windows:
 
@@ -92,7 +92,7 @@ From the MySQL prompt:
     make check  #This assumes a local mysql instance is available, username root with no password
 
 
-# FUNCTIONS:
+# Functions:
 To try the examples below import the provided sampledb.sql into a MySQL database.
 
     mysqladmin -u root create lib_ta
@@ -293,14 +293,14 @@ The MACD signal line is defined as an EMA of MACD
 
 ------------------------------------------------------------------------------------------------------
 
-# USING WITH INTEGER DATA INSTEAD OF FLOATS:
+# Using integer data values instead of floats:
 
 Financial data tends to be stored as floats, however sometimes it might be useful to run these functions with integer data.  This can be achieved using MySQLs CAST:
 
 SELECT ta_ema(CAST(integer_data_field AS DECIMAL(65), 14) FROM TABLE;
 
 
-# CREATING NEW FUNCTIONS:
+# Creating new functions:
 
 * The easiest way would be to copy one of the existing .c files to a different name and modify its implementation.
 * Edit test/03_test.sh and add a suitable test to validate results of the new function using the provided dataset.
@@ -310,5 +310,5 @@ SELECT ta_ema(CAST(integer_data_field AS DECIMAL(65), 14) FROM TABLE;
 
 
 
-# CONTACT:
+# Contact (original author):
 João Costa <joaocosta@zonalivre.org>
