@@ -1,4 +1,4 @@
-## This is a fork of lib_mysqludf_ta to fix bugs and cleanup code & documentation. A work in progress.
+This is a fork of lib_mysqludf_ta to fix bugs and cleanup code & documentation. A work in progress.
 
 # Description
 
