@@ -37,7 +37,9 @@ http://github.com/joaocosta/lib_mysqludf_ta
 
 If this fails, run ./autogen.sh and repeat the "./configure && make && make install" sequence.
 
-## FreeBSD (testing)
+## FreeBSD 9.x/10.x:
+
+(Note to self: might need to use cmake).
 
     ./autogen.sh
     ./configure
