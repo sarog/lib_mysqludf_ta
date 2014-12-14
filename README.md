@@ -91,7 +91,9 @@ From the MySQL prompt:
     CREATE FUNCTION ta_tr RETURNS REAL SONAME 'lib_mysqludf_ta.dll';
 
 
-# Test your installation (this assumes a local default MySQL instance with username 'root' with no password defined):
+# Test your installation:
+
+This assumes a local default MySQL instance with username 'root' with no password defined
 
     make check
 
@@ -227,7 +229,7 @@ To calculate True Range
 
 ------------------------------------------------------------------------------------------------------
 
-# ta_previous - Calculate Previous True Range
+## ta_previous - Calculate Previous True Range
 
     ta_previous(
         float data,
@@ -297,7 +299,8 @@ The MACD signal line is defined as an EMA of the MACD:
 ------------------------------------------------------------------------------------------------------
 
 # Using integer data values instead of floats:
-# -sg: perhaps use DECIMAL(8,3) instead :)
+
+-sg: perhaps use DECIMAL(9,4) instead :)
 
 Financial data tends to be stored as floats, however sometimes it might be useful to run these functions with integer data.  This can be achieved using MySQLs CAST:
 
