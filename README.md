@@ -32,10 +32,11 @@ http://github.com/joaocosta/lib_mysqludf_ta
 
 ## Linux:
 
-Linux requires installation of libtool:
+Linux requires the installation of libtool:
 
     sudo apt-get install libtool
 
+Once done, proceed with the compile and installation:
 
     ./configure
     make
