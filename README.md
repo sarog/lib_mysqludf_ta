@@ -29,11 +29,13 @@ http://github.com/joaocosta/lib_mysqludf_ta
 
 # Compiling the UDFs
 
+
+## Linux:
+
 Linux requires installation of libtool:
 
     sudo apt-get install libtool
 
-## Linux:
 
     ./configure
     make
